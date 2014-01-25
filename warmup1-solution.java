@@ -510,7 +510,6 @@ in3050(30, 41) → false
 in3050(40, 50) → true
  */
 
-
 public boolean in3050(int a, int b) {
     if((a>=30 & a<=40)&(b>=30 & b<=40)){
 	return true;
@@ -522,6 +521,14 @@ public boolean in3050(int a, int b) {
 	return false;
     }
 }
+
+/*
+Given 2 positive int values, return the larger value that is in the range 10..20 inclusive, or return 0 if neither is in that range.
+
+max1020(11, 19) → 19
+max1020(19, 11) → 19
+max1020(11, 9) → 11
+ */
 
 public int max1020(int a, int b) {
     if((a>=10 & a<=20)&(b>=10 & b<=20)){
@@ -545,12 +552,12 @@ public int max1020(int a, int b) {
 }
 
 /*
-Given 2 positive int values, return the larger value that is in the range 10..20 inclusive, or return 0 if neither is in that range.
+Return true if the given string contains between 1 and 3 'e' chars.
 
-max1020(11, 19) → 19
-max1020(19, 11) → 19
-max1020(11, 9) → 11
- */
+stringE("Hello") → true
+stringE("Heelle") → true
+stringE("Heelele") → false
+*/
 
 public boolean stringE(String str) {
   
